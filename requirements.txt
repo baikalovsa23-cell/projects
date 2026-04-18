@@ -1,0 +1,42 @@
+# Airdrop Farming System v4.0 - Fixed versions
+# Python 3.11+
+
+# Core
+web3==6.20.3
+eth-account==0.10.0
+ccxt==4.3.95
+curl_cffi==0.7.3
+numpy==2.2.1
+
+# Database
+psycopg2-binary==2.9.9
+
+# Security
+cryptography==42.0.0
+
+# Logging
+loguru==0.7.2
+
+# Retry/Resilience
+tenacity==8.2.3
+
+# Web Framework
+flask==3.0.0
+gunicorn==21.2.0
+
+# Scheduling
+apscheduler==3.10.4
+
+# Telegram
+pyTelegramBotAPI==4.14.0
+
+# HTTP Client
+aiohttp==3.9.1
+requests==2.31.0
+
+# Environment
+python-dotenv==1.0.0
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1

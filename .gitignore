@@ -1,0 +1,205 @@
+# ===== CRITICAL SECRETS (NEVER COMMIT!) =====
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# Secrets file
+.farming_secrets
+/root/.farming_secrets
+.secrets_local
+
+# SSH keys
+*.pem
+*.key
+id_rsa*
+*.ppk
+
+# Private keys and encrypted wallets
+keys/
+wallets_encrypted.json
+assigned_wallets.json
+*.wallet
+
+# API credentials
+*_credentials.json
+*_api_keys.txt
+
+# CEX subaccounts with real API keys (NEVER COMMIT!)
+Subaccaunt.md
+database/seed_cex_subaccounts.sql
+
+# ===== LOGS =====
+logs/
+*.log
+*.log.*
+
+# ===== PYTHON =====
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+.env/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# ===== DATABASE =====
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL
+*.dump
+*.sql.backup
+
+# ===== DATA DIRECTORIES =====
+data/*
+!data/.gitkeep
+
+# ===== OPENCLAW =====
+openclaw/profiles/*
+!openclaw/profiles/.gitkeep
+
+# Browser automation artifacts
+*.crx
+cookies.json
+browser_cache/
+
+# ===== IDE / EDITORS =====
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===== OS =====
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.directory
+.Trash-*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# ===== TEMPORARY FILES =====
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# ===== PROJECT-SPECIFIC =====
+
+# Worker assigned wallets
+worker_*/assigned_wallets.json
+
+# Backup files
+/opt/farming/keys/.wallet_key_backup
+
+# Research data
+protocol_research_cache/
+news_cache/
+
+# Test wallets
+test_wallets/
+
+# ===== DOCUMENTATION BUILD =====
+docs/_build/
+docs/.doctrees/
+site/
+
+# ===== MISC =====
+.serverless/
+.terraform/
+node_modules/  # if any JS scripts
+package-lock.json
+yarn.lock
